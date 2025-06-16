@@ -1,0 +1,152 @@
+$cerna: #000000;
+$bezova: #B6B09F;
+$svetla: #EAE4D5;
+$seda: #F2F2F2;
+$bila: white;
+
+
+html {
+  box-sizing: border-box;
+}
+
+*, ::before, ::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1.5;
+  color: $cerna;
+  margin: 0;
+}
+
+.header__logo {
+  a {
+    text-decoration: none;
+    color: $cerna;
+    }
+  a:hover,
+  a:focus,
+  a:active {
+    border: $seda;
+    border-radius: 10px;
+    background-color: $seda;
+    padding: 15px 15px 38px 15px;
+    } 
+}
+
+/* NADPISY*/
+h1 {
+  font-weight: 400;
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 0;
+}
+
+h1,
+h2 {
+  text-transform: uppercase
+}
+
+h2 {
+  margin-left: 20px;
+  padding-top: 20px;
+}
+
+h3,
+h4 {
+  text-align: center;
+}
+
+h4 {
+  margin-top: 0;
+  font-weight: 100;
+}
+
+/* MENU*/
+.menu {
+text-align: center;
+    li {
+    display: inline-block;
+   }
+
+   a {
+    text-decoration: none;
+    padding: 20px 50px;
+    color: $cerna;
+   }
+
+  a:hover,
+  a:focus,
+  a:active {
+  border: $seda;
+  border-radius: 10px;
+  background-color: $seda;
+  }
+}
+
+/* UVODNÍ FOTKY*/
+.img-auto {
+  max-width: 100%;
+}
+
+/* láska ~ emoce ~ život*/
+.motto {
+  margin-top: 90px;
+  margin-bottom: 100px;
+}
+
+/* O MNĚ*/
+.lenka {
+  background-image: url(/images/lenka/lenka.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  }
+
+.sloupce {
+  padding-left: 20px;
+  column-count: 2;
+  column-width: 80px;
+  column-fill: auto;
+  font-weight: 400;
+  }
+
+.tesimse {
+  font-size: 22px;
+}
+
+/* RECENZE*/
+.recenze {
+  text-align: center;
+  padding: 20px;
+}
+
+
+/* PATIČKA*/
+footer {
+    background-color: $cerna;
+    color: $bila;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    a {
+      text-decoration: none;
+      color: $bila;
+     padding: 20px 30px;
+    
+    }
+
+  a:hover,
+  a:focus,
+  a:active {
+  border: #262626;
+  border-radius: 10px;
+  background-color: #262626;
+  color: $bila;
+  font-weight: bold;
+  }
+}
+

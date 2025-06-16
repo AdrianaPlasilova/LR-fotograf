@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{{title}}</title>
+
+	<!-- FONT -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="/css/style.css">
+
+</head>
+<body>
+	<!-- HLAVIČKA -->
+	<header class="header">
+		<div class="header__logo">
+		<h1><a href="/" class="back">Lenka Řimsová</a></h1>
+		<h4>fotograf</h4>
+		</div>
+	</header>
+
+	<!-- MENU -->
+	<nav class="menu">
+		<ul class="menu__list">
+			<li class="menu__item"><a href="#omne" class="menu__link">O MNĚ</a></li>
+			<li class="menu__item"><a href="/LR-fotograf/galerie/" class="menu__link">GALERIE</a></li>
+			<li class="menu__item"><a href="/LR-fotograf/castedotazy/" class="menu__link">ČASTÉ DOTAZY</a></li>
+            <li class="menu__item"><a href="/LR-fotograf/kontakt/" class="menu__link">KONTAKT</a></li>
+		</ul>
+	</nav>
+
+	<main class="main">
+    {{content | safe}}
+    	</main>
+
+
+	<footer class="footer">
+		&copy;2025 <a href="/">LENKA ŘIMSOVÁ - fotograf</a>
+	</footer>
+
+</body>
+</html>
+
