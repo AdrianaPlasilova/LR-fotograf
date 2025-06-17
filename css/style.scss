@@ -124,6 +124,25 @@ text-align: center;
   padding: 20px;
 }
 
+/* FORMULÁŘ*/
+form {
+  background-image: url(/images/lenka/lenka.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.form-field {
+  margin-bottom: 8px;
+  label {
+    display: block;
+    margin-top: 2px;
+    font-size: 14px;
+  }
+  .button {
+    border: $bezova;
+    border: 25px;
+    border-color: $bezova;
+  }
+}
 
 /* PATIČKA*/
 footer {

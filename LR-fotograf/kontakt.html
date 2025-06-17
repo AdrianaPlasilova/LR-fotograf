@@ -2,14 +2,43 @@
 layout: sablona-hp.njk
 title: Lenka Řimsová-fotograf
 ---
-<section class="formular">
-<h2>Kontaktujte mě</h2>
+<section class="kontaktujte">
 
-<form action="">
-    <div>
+<form action="formular">
+ <fieldset>
+    <legend class="legend">Kontaktujte mě</legend>
+       <div class="form-field">
         <label for="jmeno">Jméno</label>
-        <input type="text" name="Jméno" id="jmeno">
+        <input type="text" name="Jméno" id="jmeno" placeholder="Lenka" autofocus>
     </div>
+    <div class="form-field">
+        <label for="prijmeni">Příjmení *</label>
+        <input type="text" name="Příjmení" id="prijmeni" placeholder="Řimsová" required>
+    </div>
+     <div class="form-field">
+            <label for="email">E-mail *</label>
+            <input type="email" name="email" id="email" placeholder="jmeno@email.cz" required>
+    </div>
+    <div class="form-field">
+            <label for="telefon">Telefon</label>
+            <input type="tel" name="telefon" id="telefon" placeholder="+420 777 888 999">
+    </div>
+    <div class="form-field">
+            <label for="doporuceni">Jak jste mě našli? *</label>
+            <input type="text" name="Jak jste mě našli?" id="doporuceni" placeholder="Doporučení, sociální sítě nebo něco jiného?" required>
+    </div>
+    <div class="form-field">
+            <label for="zprava">Napište mi</label>
+            <textarea name="zprava" id="zprava" placeholder="Ahoj, mám zájem o focení..."></textarea>
+    </div>
+    <div>
+        <input type="checkbox" name="souhlas" id="checkbox">
+        <label class="checkbox" for="checkbox">Souhlas</label>
+    </div>
+        
+        <button class="button" type="submit">Odeslat</button>
+ </fieldset>
+
 </form>
 
 </section>

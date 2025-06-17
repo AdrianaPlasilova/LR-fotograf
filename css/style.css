@@ -117,6 +117,27 @@ h4 {
   padding: 20px;
 }
 
+/* FORMULÁŘ*/
+form {
+  background-image: url(/images/lenka/lenka.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.form-field {
+  margin-bottom: 8px;
+}
+.form-field label {
+  display: block;
+  margin-top: 2px;
+  font-size: 14px;
+}
+.form-field .button {
+  border: #B6B09F;
+  border: 25px;
+  border-color: #B6B09F;
+}
+
 /* PATIČKA*/
 footer {
   background-color: #000000;
