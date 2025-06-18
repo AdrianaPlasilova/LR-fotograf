@@ -100,19 +100,11 @@ text-align: center;
 
 /* O MNĚ*/
 .lenka {
-  background-image: url(/images/lenka/lenka.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  }
-
-.sloupce {
-  padding-left: 20px;
-  column-count: 2;
-  column-width: 80px;
-  column-fill: auto;
-  font-weight: 400;
-  }
+  background-color: $seda;
+}
+.fotografka {
+max-width: fit-content;
+}
 
 .tesimse {
   font-size: 22px;
@@ -124,25 +116,67 @@ text-align: center;
   padding: 20px;
 }
 
+/* KONTAKTY*/
+.udaje {
+  text-align: center;
+  a {
+    text-decoration: none;
+    color: $cerna;
+  }
+}
+
 /* FORMULÁŘ*/
-form {
+.kontaktujte {
+  margin-left: 15px;
   background-image: url(/images/lenka/lenka.jpg);
-  background-size: contain;
   background-repeat: no-repeat;
+  background-position: right 45% bottom 20%;
+}
+
+.legend {
+  font-size: 35px;
+  margin-left: 20px;
+}
+form {
+  max-width: 45%;
 }
 .form-field {
   margin-bottom: 8px;
+  
+
   label {
     display: block;
     margin-top: 2px;
-    font-size: 14px;
+    font-size: 16px;
+    
+    }
+
+  textarea,
+  input {
+    width: 100%;
+    font-size: 16px;
+    color: $cerna;
+    padding: 5px 8px;
+    opacity: 0.75;
+    } 
+  } 
+  .checkbox {
+    margin-bottom: 20px;
+    font-size: 16px;
   }
   .button {
-    border: $bezova;
-    border: 25px;
-    border-color: $bezova;
+    border: 8px;
+    border-radius: 25px;
+    border-color: gray;
+    padding: 20px 35px;
+    font-size: 14px;
+    font-weight: bold;
+    }
+  .button:hover {
+    background-color: $cerna;
+    color: $bezova;
   }
-}
+ 
 
 /* PATIČKA*/
 footer {

@@ -90,21 +90,12 @@ h4 {
 
 /* O MNĚ*/
 .lenka {
-  background-image: url(/images/lenka/lenka.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-color: #F2F2F2;
 }
 
-.sloupce {
-  padding-left: 20px;
-  -moz-column-count: 2;
-       column-count: 2;
-  -moz-column-width: 80px;
-       column-width: 80px;
-  -moz-column-fill: auto;
-       column-fill: auto;
-  font-weight: 400;
+.fotografka {
+  max-width: -moz-fit-content;
+  max-width: fit-content;
 }
 
 .tesimse {
@@ -117,11 +108,30 @@ h4 {
   padding: 20px;
 }
 
+/* KONTAKTY*/
+.udaje {
+  text-align: center;
+}
+.udaje a {
+  text-decoration: none;
+  color: #000000;
+}
+
 /* FORMULÁŘ*/
-form {
+.kontaktujte {
+  margin-left: 15px;
   background-image: url(/images/lenka/lenka.jpg);
-  background-size: contain;
   background-repeat: no-repeat;
+  background-position: right 45% bottom 20%;
+}
+
+.legend {
+  font-size: 35px;
+  margin-left: 20px;
+}
+
+form {
+  max-width: 45%;
 }
 
 .form-field {
@@ -130,12 +140,34 @@ form {
 .form-field label {
   display: block;
   margin-top: 2px;
-  font-size: 14px;
+  font-size: 16px;
 }
-.form-field .button {
-  border: #B6B09F;
-  border: 25px;
-  border-color: #B6B09F;
+.form-field textarea,
+.form-field input {
+  width: 100%;
+  font-size: 16px;
+  color: #000000;
+  padding: 5px 8px;
+  opacity: 0.75;
+}
+
+.checkbox {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.button {
+  border: 8px;
+  border-radius: 25px;
+  border-color: gray;
+  padding: 20px 35px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.button:hover {
+  background-color: #000000;
+  color: #B6B09F;
 }
 
 /* PATIČKA*/
