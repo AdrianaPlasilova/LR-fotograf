@@ -120,23 +120,35 @@ h4 {
 .grilenka {
   margin-bottom: 40px;
   display: grid;
-  grid-template-columns: 35% 2fr;
-  grid-template-rows: auto auto auto auto;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, auto);
+  column-gap: 25px;
+  margin: 0 15px 0 20px;
+  padding: 25px;
+}
+
+.story {
+  grid-column: span 2;
 }
 
 .lenka {
-  border: 1px solid $seda;
+ /* border: 1px solid $seda;
   border-radius: 10px;
-  margin-left: 5px;
-  background-color: $seda;
+  background-color: $seda;*/
   text-align: center;
+  margin-left: 5px;
 }
 .img-fotografka {
-max-width: 100%;
+width: 100%;
+height: 100%;
+object-fit: cover;
+grid-column: 1 / span 2;
+grid-row: 1 / span 3;
 }
 
 .tesimse {
   font-weight: bold;
+  grid-column: span 2;
 }
 
 /* RECENZE*/
