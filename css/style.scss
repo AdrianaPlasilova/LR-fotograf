@@ -96,10 +96,18 @@ text-align: center;
 .motto {
   margin-top: 90px;
   margin-bottom: 100px;
+  margin-left: 10px;
+  border: 2px solid $seda;
+  border-radius: 10px;
+  padding-top: 30px;
+  padding-bottom: 35px;
 }
 
 /* O MNĚ*/
 .lenka {
+  border: 1px solid $seda;
+  border-radius: 10px;
+  margin-left: 5px;
   background-color: $seda;
 }
 .fotografka {
@@ -117,12 +125,34 @@ max-width: fit-content;
 }
 
 /* KONTAKTY*/
-.udaje {
-  text-align: center;
+.obdelnik {
+  display: flex;
+  align-items: center;
+  margin: 60px 20px 30px 20px;
+  border: 2px solid $seda;
+  border-radius: 20px;
+  background-color: $seda;
+  font-size: 19px;
+
   a {
     text-decoration: none;
     color: $cerna;
+    text-align: center;
   }
+}
+
+.udaje {
+  display: inline-flex;
+  flex-grow: 1;
+  align-items: center;
+  text-align: center;
+}
+
+.ikonka {
+  flex: 0 0 20px;
+  margin: 25px 25px 25px 25px;
+  align-items: center;
+  text-align: center;
 }
 
 /* FORMULÁŘ*/
