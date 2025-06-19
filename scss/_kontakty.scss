@@ -1,0 +1,96 @@
+@use 'barvy';
+
+/* KONTAKTY*/
+.obdelnik {
+  display: flex;
+  align-items: center;
+  margin: 60px 20px 30px 20px;
+  border: 2px solid barvy.$seda;
+  border-radius: 20px;
+  background-color: barvy.$seda;
+  font-size: 19px;
+
+  a {
+    text-decoration: none;
+    color: barvy.$cerna;
+    text-align: center;
+  }
+
+  a:hover,
+  a:focus,
+  a:active {
+  color: barvy.$cerna;
+  font-weight: bold;
+  }
+}
+
+.udaje {
+  display: inline-flex;
+  flex-grow: 1;
+  align-items: center;
+  text-align: center;
+}
+
+.ikonka {
+  flex: 0 0 20px;
+  margin: 25px 25px 25px 25px;
+  align-items: center;
+  text-align: center;
+}
+
+/* FORMULÁŘ*/
+.kontaktujte {
+  margin-left: 15px;
+  background-image: url(/images/lenka/lenka.jpg);
+  background-repeat: no-repeat;
+  background-position: right 45% bottom 10%;
+}
+
+.legend {
+  font-size: 35px;
+  margin-left: 20px;
+}
+form {
+  max-width: 45%;
+}
+.form-field {
+  margin-bottom: 8px;
+  
+
+  label {
+    display: block;
+    margin-top: 2px;
+    font-size: 18px;
+    
+    }
+
+  textarea,
+  input {
+    width: 100%;
+    font-size: 16px;
+    color: barvy.$cerna;
+    padding: 5px 8px;
+    opacity: 0.75;
+    } 
+  } 
+
+  .checkbox {
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+
+  .button {
+    border: 8px;
+    border-radius: 25px;
+    border-color: gray;
+    background-color: gray;
+    padding: 20px 35px;
+    font-size: 16px;
+    font-weight: bold;
+    color: barvy.$svetla;
+    }
+
+  .button:hover {
+    background-color: barvy.$cerna;
+    color: barvy.$bezova;
+  }

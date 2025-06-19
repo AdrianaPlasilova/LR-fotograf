@@ -1,0 +1,26 @@
+@use 'barvy';
+
+/* PATIČKA*/
+footer {
+    background-color: barvy.$cerna;
+    color: barvy.$bila;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    a {
+      text-decoration: none;
+      color: barvy.$bila;
+     padding: 20px 30px;
+    
+    }
+
+  a:hover,
+  a:focus,
+  a:active {
+  border: #262626;
+  border-radius: 10px;
+  background-color: #262626;
+  color: barvy.$bila;
+  font-weight: bold;
+  }
+}

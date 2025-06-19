@@ -1,0 +1,100 @@
+@use 'barvy';
+
+html {
+  box-sizing: border-box;
+}
+
+*, ::before, ::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1.5;
+  color: barvy.$cerna;
+  margin: 0;
+}
+
+/* STICKY */
+
+/* .fixed {
+  position: sticky;
+  top: 0;
+  left: 0;
+ background-color: barvy.$bila;
+ height: 50%;
+ border: 1px solid barvy.$bila;
+ border-radius: 20px;
+} */
+
+
+.header__logo {
+  a {
+    text-decoration: none;
+    color: barvy.$cerna;
+    }
+  a:hover,
+  a:focus,
+  a:active {
+    border: barvy.$seda;
+    border-radius: 10px;
+    background-color: barvy.$seda;
+    padding: 15px 15px 38px 15px;
+    } 
+}
+
+/* NADPISY*/
+h1 {
+  
+  font-size: 50px;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+h1,
+h2{
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+h2 {
+  margin-left: 20px;
+  padding-top: 20px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-align: center;
+}
+
+h4 {
+  margin-top: 0;
+  font-weight: 100;
+}
+
+/* MENU*/
+.menu {
+  text-align: center;
+  padding-bottom: 2px;
+      li {
+      display: inline-block;
+    }
+
+    a {
+      text-decoration: none;
+      padding: 20px 50px;
+      color: barvy.$cerna;
+    }
+
+    a:hover,
+    a:focus,
+    a:active {
+    border: barvy.$seda;
+    border-radius: 10px;
+    background-color: barvy.$seda;
+    }
+  }

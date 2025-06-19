@@ -1,0 +1,60 @@
+@use 'barvy';
+
+/* UVODNÍ FOTKY*/
+.img-auto {
+  max-width: 100%;
+}
+
+/* láska ~ emoce ~ život*/
+.motto {
+  margin: 90px 30px 100px 30px;
+  border: 2px solid barvy.$seda;
+  border-radius: 0 20px;
+  padding: 20px 0 20px 0;
+  font-size:larger;
+}
+
+/* O MNĚ*/
+
+.grilenka {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, auto);
+  column-gap: 50px;
+  margin: 0 120px 40px 120px;
+  padding: 25px;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+}
+
+.storyuvod {
+  font-size: larger;
+}
+.story {
+  grid-column: span 1;
+  font-size: 20px;
+  align-self: stretch;
+}
+
+/*.lenka {
+  border: 1px solid barvy.$seda;
+  border-radius: 10px;
+  background-color: barvy.$seda;
+  text-align: center;
+  margin-left: 5px;
+}*/
+
+.img-fotografka {
+width: 100%;
+height: 100%;
+object-fit: cover;
+grid-column: 1 / span 1;
+grid-row: 1 / span 3;
+}
+
+.storyuvod {
+  font-weight: 400;
+  grid-column: span 1;
+  grid-row: span 1;
+}
