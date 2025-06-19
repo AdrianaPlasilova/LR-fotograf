@@ -116,6 +116,54 @@ h4 {
   padding: 20px;
 }
 
+/* ČASTÉ DOTAZY*/
+.dotazy {
+  margin: 80px 15% 65px 15%;
+}
+
+.otazka {
+  margin: 0 25px 0px 25px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.odpoved {
+  text-align: center;
+  border: 2px solid #F2F2F2;
+  border-radius: 0 15px;
+  background-color: #F2F2F2;
+  padding: 0 25px;
+  margin: 0 0 50px 0;
+}
+
+.ptejtese {
+  text-align: right;
+  margin: 80px 60px 25px 0;
+  -webkit-text-decoration: overline #F2F2F2;
+          text-decoration: overline #F2F2F2;
+}
+.ptejtese a {
+  text-decoration: none;
+  color: #000000;
+  border: #F2F2F2;
+  border-radius: 10px;
+  background-color: #F2F2F2;
+  padding: 20px;
+  color: #000000;
+}
+.ptejtese a:hover,
+.ptejtese a:focus,
+.ptejtese a:active {
+  border: #000000;
+  border-radius: 10px;
+  background-color: #000000;
+  padding: 20px;
+  color: #EAE4D5;
+  font-weight: bolder;
+  -webkit-text-decoration: overline #000000;
+          text-decoration: overline #000000;
+}
+
 /* KONTAKTY*/
 .obdelnik {
   display: flex;
