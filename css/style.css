@@ -42,9 +42,9 @@ body {
 /* NADPISY*/
 h1 {
   font-weight: 400;
-  text-align: center;
   font-size: 50px;
   margin-bottom: 0;
+  text-align: center;
 }
 
 h1,
@@ -57,6 +57,8 @@ h2 {
   padding-top: 20px;
 }
 
+h1,
+h2,
 h3,
 h4 {
   text-align: center;
@@ -104,28 +106,33 @@ h4 {
 
 /* O MNĚ*/
 .grilenka {
-  margin-bottom: 40px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, auto);
-  -moz-column-gap: 25px;
-       column-gap: 25px;
-  margin: 0 15px 0 20px;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+  margin: 0 120px 40px 120px;
   padding: 25px;
+  justify-items: center;
+  align-items: center;
+}
+
+.storyuvod {
+  font-size: larger;
 }
 
 .story {
-  grid-column: span 2;
+  grid-column: span 1;
+  font-size: 20px;
 }
 
-.lenka {
-  /* border: 1px solid $seda;
-   border-radius: 10px;
-   background-color: $seda;*/
+/*.lenka {
+  border: 1px solid $seda;
+  border-radius: 10px;
+  background-color: $seda;
   text-align: center;
   margin-left: 5px;
-}
-
+}*/
 .img-fotografka {
   width: 100%;
   height: 100%;
@@ -135,9 +142,10 @@ h4 {
   grid-row: 1/span 3;
 }
 
+.storyuvod,
 .tesimse {
   font-weight: bold;
-  grid-column: span 2;
+  grid-column: span 1;
 }
 
 /* RECENZE*/
