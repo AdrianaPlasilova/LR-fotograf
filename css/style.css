@@ -16,6 +16,16 @@ body {
   margin: 0;
 }
 
+/* STICKY */
+/* .fixed {
+  position: sticky;
+  top: 0;
+  left: 0;
+ background-color: $bila;
+ height: 50%;
+ border: 1px solid $bila;
+ border-radius: 20px;
+} */
 .header__logo a {
   text-decoration: none;
   color: #000000;
@@ -60,6 +70,7 @@ h4 {
 /* MENU*/
 .menu {
   text-align: center;
+  padding-bottom: 2px;
 }
 .menu li {
   display: inline-block;
@@ -84,30 +95,35 @@ h4 {
 
 /* láska ~ emoce ~ život*/
 .motto {
-  margin-top: 90px;
-  margin-bottom: 100px;
-  margin-left: 10px;
+  margin: 90px 30px 100px 30px;
   border: 2px solid #F2F2F2;
-  border-radius: 10px;
-  padding-top: 30px;
-  padding-bottom: 35px;
+  border-radius: 0 20px;
+  padding: 20px 0 20px 0;
+  font-size: larger;
 }
 
 /* O MNĚ*/
+.grilenka {
+  margin-bottom: 40px;
+  display: grid;
+  grid-template-columns: 35% 2fr;
+  grid-template-rows: auto auto auto auto;
+}
+
 .lenka {
   border: 1px solid #F2F2F2;
   border-radius: 10px;
   margin-left: 5px;
   background-color: #F2F2F2;
+  text-align: center;
 }
 
-.fotografka {
-  max-width: -moz-fit-content;
-  max-width: fit-content;
+.img-fotografka {
+  max-width: 100%;
 }
 
 .tesimse {
-  font-size: 22px;
+  font-weight: bold;
 }
 
 /* RECENZE*/
@@ -199,7 +215,7 @@ h4 {
   margin-left: 15px;
   background-image: url(/images/lenka/lenka.jpg);
   background-repeat: no-repeat;
-  background-position: right 45% bottom 20%;
+  background-position: right 45% bottom 10%;
 }
 
 .legend {
@@ -217,7 +233,7 @@ form {
 .form-field label {
   display: block;
   margin-top: 2px;
-  font-size: 16px;
+  font-size: 18px;
 }
 .form-field textarea,
 .form-field input {
@@ -237,9 +253,11 @@ form {
   border: 8px;
   border-radius: 25px;
   border-color: gray;
+  background-color: gray;
   padding: 20px 35px;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: bold;
+  color: #EAE4D5;
 }
 
 .button:hover {

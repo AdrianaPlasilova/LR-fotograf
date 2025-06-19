@@ -22,6 +22,19 @@ body {
   margin: 0;
 }
 
+/* STICKY */
+
+/* .fixed {
+  position: sticky;
+  top: 0;
+  left: 0;
+ background-color: $bila;
+ height: 50%;
+ border: 1px solid $bila;
+ border-radius: 20px;
+} */
+
+
 .header__logo {
   a {
     text-decoration: none;
@@ -67,25 +80,26 @@ h4 {
 
 /* MENU*/
 .menu {
-text-align: center;
-    li {
-    display: inline-block;
-   }
+  text-align: center;
+  padding-bottom: 2px;
+      li {
+      display: inline-block;
+    }
 
-   a {
-    text-decoration: none;
-    padding: 20px 50px;
-    color: $cerna;
-   }
+    a {
+      text-decoration: none;
+      padding: 20px 50px;
+      color: $cerna;
+    }
 
-  a:hover,
-  a:focus,
-  a:active {
-  border: $seda;
-  border-radius: 10px;
-  background-color: $seda;
+    a:hover,
+    a:focus,
+    a:active {
+    border: $seda;
+    border-radius: 10px;
+    background-color: $seda;
+    }
   }
-}
 
 /* UVODNÍ FOTKY*/
 .img-auto {
@@ -94,28 +108,35 @@ text-align: center;
 
 /* láska ~ emoce ~ život*/
 .motto {
-  margin-top: 90px;
-  margin-bottom: 100px;
-  margin-left: 10px;
+  margin: 90px 30px 100px 30px;
   border: 2px solid $seda;
-  border-radius: 10px;
-  padding-top: 30px;
-  padding-bottom: 35px;
+  border-radius: 0 20px;
+  padding: 20px 0 20px 0;
+  font-size:larger;
 }
 
 /* O MNĚ*/
+
+.grilenka {
+  margin-bottom: 40px;
+  display: grid;
+  grid-template-columns: 35% 2fr;
+  grid-template-rows: auto auto auto auto;
+}
+
 .lenka {
   border: 1px solid $seda;
   border-radius: 10px;
   margin-left: 5px;
   background-color: $seda;
+  text-align: center;
 }
-.fotografka {
-max-width: fit-content;
+.img-fotografka {
+max-width: 100%;
 }
 
 .tesimse {
-  font-size: 22px;
+  font-weight: bold;
 }
 
 /* RECENZE*/
@@ -207,7 +228,7 @@ max-width: fit-content;
   margin-left: 15px;
   background-image: url(/images/lenka/lenka.jpg);
   background-repeat: no-repeat;
-  background-position: right 45% bottom 20%;
+  background-position: right 45% bottom 10%;
 }
 
 .legend {
@@ -224,7 +245,7 @@ form {
   label {
     display: block;
     margin-top: 2px;
-    font-size: 16px;
+    font-size: 18px;
     
     }
 
@@ -237,18 +258,23 @@ form {
     opacity: 0.75;
     } 
   } 
+
   .checkbox {
     margin-bottom: 20px;
     font-size: 16px;
   }
+
   .button {
     border: 8px;
     border-radius: 25px;
     border-color: gray;
+    background-color: gray;
     padding: 20px 35px;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
+    color: $svetla;
     }
+
   .button:hover {
     background-color: $cerna;
     color: $bezova;
