@@ -1,0 +1,22 @@
+$cerna: #000000;
+$bezova: #B6B09F;
+$svetla: #EAE4D5;
+$seda: #F2F2F2;
+$bila: white;
+
+.dekuji {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+    .uzmam {
+        grid-column: 2 / span 3;
+        grid-row: 2 ;
+    }
+
+    .zajem {
+        grid-column: 2 / span 3;
+        grid-row: 3 ;
+        text-align: center;
+    }
+
