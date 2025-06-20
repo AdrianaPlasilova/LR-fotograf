@@ -1,7 +1,9 @@
 @use 'barvy';
 
-section {
-    margin: 0 15px 0 15px;
+.rodina,
+.laskypribeh,
+.svatby {
+    margin: 5em 15px 0 15px;
 }
 
 .stitek {
@@ -13,7 +15,7 @@ section {
 }.popisek {
     padding: 0 20px 15px 20px;
     text-align: center;
-    margin: 0 15%;
+    margin: 0 10%;
     text-wrap: balance;
 }
 

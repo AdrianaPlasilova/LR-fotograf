@@ -126,6 +126,7 @@ h4 {
   grid-column: span 1;
   font-size: 20px;
   align-self: stretch;
+  text-wrap: balance;
 }
 
 /*.lenka {
@@ -156,8 +157,10 @@ h4 {
   padding: 20px;
 }
 
-section {
-  margin: 0 15px 0 15px;
+.rodina,
+.laskypribeh,
+.svatby {
+  margin: 5em 15px 0 15px;
 }
 
 .stitek {
@@ -170,7 +173,7 @@ section {
 .popisek {
   padding: 0 20px 15px 20px;
   text-align: center;
-  margin: 0 15%;
+  margin: 0 10%;
   text-wrap: balance;
 }
 
