@@ -8,6 +8,7 @@ section {
     text-decoration: underline;
     color: barvy.$cerna;
     font-weight: 300;
+    margin-top: 3em;
 
 }.popisek {
     padding: 0 20px 15px 20px;
@@ -19,6 +20,13 @@ section {
 .fotoalbum {
    text-align: center;
     padding-bottom: 2px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: barvy.$bila;
+    border: 2px solid barvy.$seda;
+    border-radius: 0 20px;
+
       li {
       display: inline-block;
     }
