@@ -1,64 +1,95 @@
 @use 'barvy';
 
 /* KONTAKTY*/
-.obdelnik {
-  display: flex;
-  align-items: center;
-  margin: 60px 20px 30px 20px;
-  border: 2px solid barvy.$seda;
-  border-radius: 20px;
-  background-color: barvy.$seda;
-  font-size: 19px;
 
-  @media screen and (min-width: 1290px) { 
-      align-items: center;
-      margin: 60px 20px 30px 20px;
-    }
-
-  a {
-    text-decoration: none;
-    color: barvy.$cerna;
-    text-align: center;
-  }
-
-  a:hover,
-  a:focus,
-  a:active {
-  color: barvy.$cerna;
-  font-weight: bold;
-  }
+main {
+  margin: 5px;
+  text-align: center;
 }
 
-.udaje {
-  flex-grow: 1;
-  align-items: center;
+.lenna {
+  max-width: 100%;
+  @media screen and (min-width: 770px) {
+      display: none;
+    }
+}
+.obdelnik {
+  display: block;
+  font-size: 16px;
   text-align: center;
-    @media screen and (min-width: 1290px) {
-      display: inline-flex;
+  align-items: center;
+  background: none;
+
+    
+    a {
+      text-decoration: none;
+      color: barvy.$cerna;
+      
+      }
+
+    a:hover,
+    a:focus,
+    a:active {
+      color: barvy.$cerna;
+      font-weight: bold;
+      }
+   
+@media screen and (min-width: 770px) {
+      background-color: barvy.$seda;
+      border: 2px solid barvy.$seda;
+      border-radius: 20px;
+      display:inline-block;
+      justify-content: space-evenly;
+      margin: 0 10px 35px 10px;
+      align-content: center;
+      width: 100%;
+  
     }
 }
 
 .ikonka {
-  flex: 0 0 20px;
-  margin: 25px 25px 25px 25px;
-  align-items: center;
+  width: auto;
+  height: 40px;
   text-align: center;
+  @media screen and (min-width: 770px) {
+    padding-right: 10px;
+  }
 }
+
+.udaje {
+  display: block;
+  flex-grow: auto;
+  @media screen and (min-width: 770px) {
+    display: inline-flex;
+    justify-content: space-between;
+    margin: 8px 35px;
+    
+  }
+}
+
 
 /* FORMULÁŘ*/
 .kontaktujte {
-  margin-left: 15px;
-  background-image: url(/images/lenka/lenka.avif);
-  background-repeat: no-repeat;
-  background-position: right 45% bottom 10%;
+  background-color: barvy.$seda;
+  text-align: left;
+    @media screen and (min-width: 770px) {
+      background-image: url(/images/lenka/lenka.avif);
+      background-repeat: no-repeat;
+      background-position: right 45% bottom 10%;
+    }
 }
 
 .legend {
   font-size: 35px;
-  margin-left: 20px;
 }
+
 form {
-  max-width: 45%;
+  max-width: 100%;
+  
+  @media screen and (min-width: 770px) {
+    min-width: 500px;
+    max-width: 49%;
+  }
 }
 .form-field {
   margin-bottom: 8px;
@@ -77,8 +108,9 @@ form {
     font-size: 16px;
     color: barvy.$cerna;
     padding: 5px 8px;
-    opacity: 0.75;
-    } 
+      @media screen and (min-width: 770px) {
+      opacity: 0.75;}
+      }
   } 
 
   .checkbox {

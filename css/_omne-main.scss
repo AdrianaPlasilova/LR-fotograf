@@ -73,3 +73,16 @@
   grid-column: span 1;
   grid-row: span 1;
 }
+
+.recenze {
+  background-color: barvy.$seda;
+}
+.uryvky {
+  border: 2px solid barvy.$seda;
+  border-radius: 0 10px;
+  background: barvy.$bila;
+  margin-top: 20px;
+  padding: 0 10px;
+  font-style: italic;
+  font-size: 16px;
+}

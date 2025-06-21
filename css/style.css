@@ -205,6 +205,20 @@ h4 {
   grid-row: span 1;
 }
 
+.recenze {
+  background-color: #F2F2F2;
+}
+
+.uryvky {
+  border: 2px solid #F2F2F2;
+  border-radius: 0 10px;
+  background: white;
+  margin-top: 20px;
+  padding: 0 10px;
+  font-style: italic;
+  font-size: 16px;
+}
+
 /* RECENZE*/
 .recenze {
   text-align: center;
@@ -260,6 +274,11 @@ h4 {
   text-decoration: none;
   padding: 20px 50px;
   color: #000000;
+}
+@media screen and (max-width: 850px) {
+  .fotoalbum a {
+    padding: 5px;
+  }
 }
 .fotoalbum a:hover,
 .fotoalbum a:focus,
@@ -355,25 +374,30 @@ h4 {
 }
 
 /* KONTAKTY*/
-.obdelnik {
-  display: flex;
-  align-items: center;
-  margin: 60px 20px 30px 20px;
-  border: 2px solid #F2F2F2;
-  border-radius: 20px;
-  background-color: #F2F2F2;
-  font-size: 19px;
+main {
+  margin: 5px;
+  text-align: center;
 }
-@media screen and (min-width: 1290px) {
-  .obdelnik {
-    align-items: center;
-    margin: 60px 20px 30px 20px;
+
+.lenna {
+  max-width: 100%;
+}
+@media screen and (min-width: 770px) {
+  .lenna {
+    display: none;
   }
+}
+
+.obdelnik {
+  display: block;
+  font-size: 16px;
+  text-align: center;
+  align-items: center;
+  background: none;
 }
 .obdelnik a {
   text-decoration: none;
   color: #000000;
-  text-align: center;
 }
 .obdelnik a:hover,
 .obdelnik a:focus,
@@ -381,40 +405,67 @@ h4 {
   color: #000000;
   font-weight: bold;
 }
-
-.udaje {
-  flex-grow: 1;
-  align-items: center;
-  text-align: center;
-}
-@media screen and (min-width: 1290px) {
-  .udaje {
-    display: inline-flex;
+@media screen and (min-width: 770px) {
+  .obdelnik {
+    background-color: #F2F2F2;
+    border: 2px solid #F2F2F2;
+    border-radius: 20px;
+    display: inline-block;
+    justify-content: space-evenly;
+    margin: 0 10px 35px 10px;
+    align-content: center;
+    width: 100%;
   }
 }
 
 .ikonka {
-  flex: 0 0 20px;
-  margin: 25px 25px 25px 25px;
-  align-items: center;
+  width: auto;
+  height: 40px;
   text-align: center;
+}
+@media screen and (min-width: 770px) {
+  .ikonka {
+    padding-right: 10px;
+  }
+}
+
+.udaje {
+  display: block;
+  flex-grow: auto;
+}
+@media screen and (min-width: 770px) {
+  .udaje {
+    display: inline-flex;
+    justify-content: space-between;
+    margin: 8px 35px;
+  }
 }
 
 /* FORMULÁŘ*/
 .kontaktujte {
-  margin-left: 15px;
-  background-image: url(/images/lenka/lenka.avif);
-  background-repeat: no-repeat;
-  background-position: right 45% bottom 10%;
+  background-color: #F2F2F2;
+  text-align: left;
+}
+@media screen and (min-width: 770px) {
+  .kontaktujte {
+    background-image: url(/images/lenka/lenka.avif);
+    background-repeat: no-repeat;
+    background-position: right 45% bottom 10%;
+  }
 }
 
 .legend {
   font-size: 35px;
-  margin-left: 20px;
 }
 
 form {
-  max-width: 45%;
+  max-width: 100%;
+}
+@media screen and (min-width: 770px) {
+  form {
+    min-width: 500px;
+    max-width: 49%;
+  }
 }
 
 .form-field {
@@ -431,7 +482,12 @@ form {
   font-size: 16px;
   color: #000000;
   padding: 5px 8px;
-  opacity: 0.75;
+}
+@media screen and (min-width: 770px) {
+  .form-field textarea,
+  .form-field input {
+    opacity: 0.75;
+  }
 }
 
 .checkbox {
