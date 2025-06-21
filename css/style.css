@@ -144,15 +144,28 @@ h4 {
 /* O MNĚ*/
 .grilenka {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(3, auto);
-  -moz-column-gap: 50px;
-       column-gap: 50px;
-  margin: 0 120px 40px 120px;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
   padding: 25px;
   justify-items: center;
   align-items: center;
   text-align: center;
+}
+@media screen and (min-width: 700px) {
+  .grilenka {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    -moz-column-gap: 50px;
+         column-gap: 50px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .grilenka {
+    margin: 0 15% 40px 15%;
+  }
 }
 
 .storyuvod {
@@ -178,8 +191,12 @@ h4 {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  grid-column: 1/span 1;
-  grid-row: 1/span 3;
+}
+@media screen and (min-width: 700px) {
+  .img-fotografka {
+    grid-column: 1/span 1;
+    grid-row: 1/span 3;
+  }
 }
 
 .storyuvod {
@@ -347,6 +364,12 @@ h4 {
   background-color: #F2F2F2;
   font-size: 19px;
 }
+@media screen and (min-width: 1290px) {
+  .obdelnik {
+    align-items: center;
+    margin: 60px 20px 30px 20px;
+  }
+}
 .obdelnik a {
   text-decoration: none;
   color: #000000;
@@ -360,10 +383,14 @@ h4 {
 }
 
 .udaje {
-  display: inline-flex;
   flex-grow: 1;
   align-items: center;
   text-align: center;
+}
+@media screen and (min-width: 1290px) {
+  .udaje {
+    display: inline-flex;
+  }
 }
 
 .ikonka {

@@ -18,14 +18,25 @@
 
 .grilenka {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(3, auto);
-  column-gap: 50px;
-  margin: 0 120px 40px 120px;
+  column-gap: 20px;
+
+   @media screen and (min-width: 700px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, auto);
+      column-gap: 50px;
+    }
+  
   padding: 25px;
   justify-items: center;
   align-items: center;
   text-align: center;
+
+  @media screen and (min-width: 1000px) {
+      margin: 0 15% 40px 15%;
+    }
 }
 
 .storyuvod {
@@ -47,11 +58,14 @@
 }*/
 
 .img-fotografka {
-width: 100%;
-height: 100%;
-object-fit: cover;
-grid-column: 1 / span 1;
-grid-row: 1 / span 3;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+ @media screen and (min-width: 700px) {  
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 3;
+  }
 }
 
 .storyuvod {
