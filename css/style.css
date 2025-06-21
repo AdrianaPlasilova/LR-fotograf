@@ -70,26 +70,63 @@ h4 {
 }
 
 /* MENU*/
-.menu {
-  text-align: center;
-  padding-bottom: 2px;
-}
-.menu li {
-  display: inline-block;
-}
-.menu a {
-  text-decoration: none;
-  padding: 20px 50px;
-  color: #000000;
-}
-.menu a:hover,
-.menu a:focus,
-.menu a:active {
-  border: #F2F2F2;
-  border-radius: 10px;
-  background-color: #F2F2F2;
+.menu__checkbox {
+  position: absolute;
+  left: -9999px;
 }
 
+.menu__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: none;
+}
+
+.menu__item {
+  border-bottom: 3px solid #F2F2F2;
+}
+
+.menu__link {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.menu__checkbox:checked ~ .menu__list {
+  display: block;
+}
+
+@media screen and (min-width: 850px) {
+  .menu__toggler {
+    display: none;
+  }
+  .menu__list {
+    display: inline-block !important;
+  }
+  .menu__item {
+    border-bottom: 0;
+  }
+  .menu {
+    text-align: center;
+    padding-bottom: 2px;
+  }
+  .menu li {
+    display: inline-block;
+  }
+  .menu a {
+    text-decoration: none;
+    padding: 20px 50px;
+    color: #000000;
+  }
+  .menu a:hover,
+  .menu a:focus,
+  .menu a:active {
+    border: #F2F2F2;
+    border-radius: 10px;
+    background-color: #F2F2F2;
+  }
+}
 /* UVODNÍ FOTKY*/
 .img-auto {
   max-width: 100%;
@@ -170,6 +207,17 @@ h4 {
   font-weight: 300;
   margin-top: 3em;
 }
+.stitek a {
+  color: #000000;
+}
+.stitek a:hover,
+.stitek a:focus,
+.stitek a:active {
+  border: #F2F2F2;
+  border-radius: 10px;
+  background-color: #F2F2F2;
+  padding: 20px;
+}
 
 .popisek {
   padding: 0 20px 15px 20px;
@@ -226,7 +274,12 @@ h4 {
 
 /* ČASTÉ DOTAZY*/
 .dotazy {
-  margin: 80px 15% 65px 15%;
+  margin: 5%;
+}
+@media screen and (min-width: 850px) {
+  .dotazy {
+    margin: 80px 15% 65px 15%;
+  }
 }
 
 .otazka {
@@ -245,31 +298,43 @@ h4 {
 }
 
 .ptejtese {
-  text-align: right;
-  margin: 80px 60px 25px 0;
+  text-align: center;
+  margin: 60px;
   -webkit-text-decoration: overline #F2F2F2;
           text-decoration: overline #F2F2F2;
 }
 .ptejtese a {
   text-decoration: none;
+  margin: 25px;
   color: #000000;
   border: #F2F2F2;
   border-radius: 10px;
   background-color: #F2F2F2;
-  padding: 20px;
+  padding: 5px;
   color: #000000;
 }
-.ptejtese a:hover,
-.ptejtese a:focus,
-.ptejtese a:active {
-  border: #000000;
-  border-radius: 10px;
-  background-color: #000000;
-  padding: 20px;
-  color: #EAE4D5;
-  font-weight: bolder;
-  -webkit-text-decoration: overline #000000;
-          text-decoration: overline #000000;
+@media screen and (min-width: 570px) {
+  .ptejtese {
+    margin: 150px;
+  }
+}
+@media screen and (min-width: 750px) {
+  .ptejtese {
+    text-align: right;
+    margin: 80px 60px 25px 0;
+  }
+  .ptejtese a:hover,
+  .ptejtese a:focus,
+  .ptejtese a:active {
+    border: #000000;
+    border-radius: 10px;
+    background-color: #000000;
+    padding: 20px;
+    color: #EAE4D5;
+    font-weight: bolder;
+    -webkit-text-decoration: overline #000000;
+            text-decoration: overline #000000;
+  }
 }
 
 /* KONTAKTY*/

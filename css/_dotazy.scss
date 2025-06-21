@@ -2,7 +2,10 @@
 
 /* ČASTÉ DOTAZY*/
 .dotazy {
+  margin: 5%;
+  @media screen and (min-width: 850px) {
   margin: 80px 15% 65px 15%;
+}
 }
 
 .otazka {
@@ -21,28 +24,37 @@
 }
 
 .ptejtese {
-  text-align: right;
-  margin: 80px 60px 25px 0;
+  text-align: center;
+  margin: 60px;
   text-decoration: overline barvy.$seda;
   a {
     text-decoration: none;
-  
+    margin: 25px;
     color: barvy.$cerna;
     border: barvy.$seda;
     border-radius: 10px;
     background-color: barvy.$seda;
-    padding: 20px;
+    padding: 5px;
     color: barvy.$cerna;
   }
-  a:hover,
-  a:focus,
-  a:active {
-  border: barvy.$cerna;
-  border-radius: 10px;
-  background-color: barvy.$cerna;
-  padding: 20px;
-  color: barvy.$svetla;
-  font-weight: bolder;
-  text-decoration: overline barvy.$cerna;
+  
+    @media screen and (min-width: 570px) {
+      margin: 150px;
+    }
+    @media screen and (min-width: 750px) {
+    text-align: right;
+    margin: 80px 60px 25px 0;
+    a:hover,
+    a:focus,
+    a:active {
+    border: barvy.$cerna;
+    border-radius: 10px;
+    background-color: barvy.$cerna;
+    padding: 20px;
+    color: barvy.$svetla;
+    font-weight: bolder;
+    text-decoration: overline barvy.$cerna;
+    }
   }
+
 }

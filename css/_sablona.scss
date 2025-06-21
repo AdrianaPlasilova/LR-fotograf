@@ -77,24 +77,67 @@ h4 {
 }
 
 /* MENU*/
-.menu {
-  text-align: center;
-  padding-bottom: 2px;
-      li {
-      display: inline-block;
-    }
 
-    a {
-      text-decoration: none;
-      padding: 20px 50px;
-      color: barvy.$cerna;
-    }
+.menu__checkbox {
+	position: absolute;
+	left: -9999px;
+}
 
-    a:hover,
-    a:focus,
-    a:active {
-    border: barvy.$seda;
-    border-radius: 10px;
-    background-color: barvy.$seda;
+.menu__list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: none;
+}
+
+.menu__item {
+	border-bottom: 3px solid barvy.$seda;
+}
+
+.menu__link {
+	display: block;
+	padding: 15px;
+	text-decoration: none;
+	color: barvy.$cerna;
+}
+
+.menu__checkbox:checked ~ .menu__list {
+display: block;
+}
+
+@media screen and (min-width: 850px) {
+  
+  .menu__toggler {
+		display: none;
+	}
+
+.menu__list {
+	display: inline-block !important;
+	}
+  .menu__item {
+	border-bottom: 0;
+	}
+
+  .menu {
+    text-align: center;
+    padding-bottom: 2px;
+
+        li {
+        display: inline-block;
+      }
+
+      a {
+        text-decoration: none;
+        padding: 20px 50px;
+        color: barvy.$cerna;
+      }
+
+      a:hover,
+      a:focus,
+      a:active {
+      border: barvy.$seda;
+      border-radius: 10px;
+      background-color: barvy.$seda;
+      }
     }
   }
